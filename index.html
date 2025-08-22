@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weddy - The Perfect Wedding Planning Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Switzer:wght@350;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="images/notion-logo.svg" alt="Weddy Logo" class="logo-icon">
+                    <span class="logo-text">Weddy</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#templates" class="nav-link">Templates</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" stroke="#707070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="cta-button">Buy Template</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-top">
+                        <h1 class="hero-title">The perfect wedding</h1>
+                        <div class="hero-icon-container">
+                            <div class="notion-icon">
+                                <img src="images/notion-icon.svg" alt="Notion Icon" class="notion-icon-img">
+                            </div>
+                            <h2 class="hero-subtitle">planning tool</h2>
+                            <div class="folder-icon">
+                                <img src="images/folder-icon.svg" alt="Folder Icon" class="folder-icon-img">
+                            </div>
+                        </div>
+                        <h3 class="hero-bottom">for that special day.</h3>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 0L12.2451 7.75492L20 10L12.2451 12.2451L10 20L7.75492 12.2451L0 10L7.75492 7.75492L10 0Z" fill="white"/>
+                        </svg>
+                        Browse Templates
+                    </button>
+                    <button class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 0L12.2451 7.75492L20 10L12.2451 12.2451L10 20L7.75492 12.2451L0 10L7.75492 7.75492L10 0Z" fill="#0448F4"/>
+                        </svg>
+                        Browse Templates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="benefits-container">
+            <div class="benefits-header">
+                <div class="benefits-tags">
+                    <span class="tag">Featured</span>
+                    <span class="tag">Framer</span>
+                    <span class="tag">templates</span>
+                </div>
+                <div class="benefits-social">
+                    <div class="avatar-group">
+                        <img src="images/avatar-1.jpg" alt="User 1" class="avatar">
+                        <img src="images/avatar-2.jpg" alt="User 2" class="avatar">
+                        <img src="images/avatar-3.jpg" alt="User 3" class="avatar">
+                        <img src="images/avatar-4.jpg" alt="User 4" class="avatar">
+                        <img src="images/avatar-5.jpg" alt="User 5" class="avatar">
+                    </div>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-text">4.9/5</span>
+                        <span class="rating-subtitle">Loved by 1000+ creators</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="templates-grid">
+                <div class="template-row">
+                    <div class="template-card">
+                        <div class="template-image">
+                            <img src="images/template-1.jpg" alt="Template 1">
+                        </div>
+                        <div class="template-content">
+                            <div class="template-header">
+                                <h3 class="template-title">Designo</h3>
+                                <span class="template-price">$39</span>
+                            </div>
+                            <div class="template-platforms">
+                                <img src="images/framer-icon.png" alt="Framer" class="platform-icon">
+                                <img src="images/figma-icon.png" alt="Figma" class="platform-icon">
+                            </div>
+                            <p class="template-category">Agency Template</p>
+                        </div>
+                    </div>
+                    
+                    <div class="template-card">
+                        <div class="template-image">
+                            <img src="images/template-2.jpg" alt="Template 2">
+                        </div>
+                        <div class="template-content">
+                            <div class="template-header">
+                                <h3 class="template-title">Designo</h3>
+                                <span class="template-price">$39</span>
+                            </div>
+                            <div class="template-platforms">
+                                <img src="images/framer-icon.png" alt="Framer" class="platform-icon">
+                                <img src="images/figma-icon.png" alt="Figma" class="platform-icon">
+                            </div>
+                            <p class="template-category">Agency Template</p>
+                        </div>
+                    </div>
+                    
+                    <div class="template-card">
+                        <div class="template-image">
+                            <img src="images/template-3.jpg" alt="Template 3">
+                        </div>
+                        <div class="template-content">
+                            <div class="template-header">
+                                <h3 class="template-title">Designo</h3>
+                                <span class="template-price">$39</span>
+                            </div>
+                            <div class="template-platforms">
+                                <img src="images/framer-icon.png" alt="Framer" class="platform-icon">
+                                <img src="images/figma-icon.png" alt="Figma" class="platform-icon">
+                            </div>
+                            <p class="template-category">Agency Template</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-row">
+                    <div class="template-card">
+                        <div class="template-image">
+                            <img src="images/template-4.jpg" alt="Template 4">
+                        </div>
+                        <div class="template-content">
+                            <div class="template-header">
+                                <h3 class="template-title">Designo</h3>
+                                <span class="template-price">$39</span>
+                            </div>
+                            <div class="template-platforms">
+                                <img src="images/framer-icon.png" alt="Framer" class="platform-icon">
+                                <img src="images/figma-icon.png" alt="Figma" class="platform-icon">
+                            </div>
+                            <p class="template-category">Agency Template</p>
+                        </div>
+                    </div>
+                    
+                    <div class="template-card">
+                        <div class="template-image">
+                            <img src="images/template-5.jpg" alt="Template 5">
+                        </div>
+                        <div class="template-content">
+                            <div class="template-header">
+                                <h3 class="template-title">Designo</h3>
+                                <span class="template-price">$39</span>
+                            </div>
+                            <div class="template-platforms">
+                                <img src="images/framer-icon.png" alt="Framer" class="platform-icon">
+                                <img src="images/figma-icon.png" alt="Figma" class="platform-icon">
+                            </div>
+                            <p class="template-category">Agency Template</p>
+                        </div>
+                    </div>
+                    
+                    <div class="template-card">
+                        <div class="template-image">
+                            <img src="images/template-6.jpg" alt="Template 6">
+                        </div>
+                        <div class="template-content">
+                            <div class="template-header">
+                                <h3 class="template-title">Designo</h3>
+                                <span class="template-price">$39</span>
+                            </div>
+                            <div class="template-platforms">
+                                <img src="images/framer-icon.png" alt="Framer" class="platform-icon">
+                                <img src="images/figma-icon.png" alt="Figma" class="platform-icon">
+                            </div>
+                            <p class="template-category">Agency Template</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="features-header">
+                <h2 class="features-title">
+                    <span class="title-word">Fully</span>
+                    <span class="title-word highlight">responsive</span>
+                    <span class="title-word">and</span>
+                    <span class="title-word">customizable</span>
+                </h2>
+                <p class="features-subtitle">No more website woes—just powerful solutions at your fingertips</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="30" fill="#F6F6F6"/>
+                            <path d="M20 25L30 35L40 25" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Never leave Framer</h3>
+                    <p class="feature-card-text">Unlock brilliance — build</p>
+                    <button class="btn btn-primary">Browse Templates</button>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="30" fill="#F6F6F6"/>
+                            <path d="M20 25L30 35L40 25" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Never leave Framer</h3>
+                    <p class="feature-card-text">Unlock brilliance — build</p>
+                </div>
+                
+                <div class="feature-card highlight-card">
+                    <div class="feature-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="30" fill="#0448F4"/>
+                            <path d="M20 25L30 35L40 25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Never leave Framer</h3>
+                    <p class="feature-card-text">Unlock brilliance — build</p>
+                    <div class="feature-steps">
+                        <div class="step">
+                            <div class="step-icon">✓</div>
+                            <span class="step-text">Pick a template</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">✓</div>
+                            <span class="step-text">Customize it</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">✓</div>
+                            <span class="step-text">Launch</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card with-image">
+                    <div class="feature-image">
+                        <img src="images/feature-image.jpg" alt="Feature Preview">
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="30" fill="#F6F6F6"/>
+                                <path d="M20 25L30 35L40 25" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card-title">Never leave Framer</h3>
+                        <p class="feature-card-text">Unlock brilliance — build</p>
+                        <button class="btn btn-primary">Browse Templates</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section 2 -->
+    <section class="benefits-2">
+        <div class="benefits-2-container">
+            <div class="benefits-2-header">
+                <h2 class="benefits-2-title">
+                    <span class="title-word">Easily</span>
+                    <span class="title-word highlight">build</span>
+                    <span class="title-word">sites</span>
+                    <span class="title-word">with</span>
+                    <span class="title-word">our</span>
+                    <span class="title-word highlight">templates</span>
+                </h2>
+                <p class="benefits-2-subtitle">No more website woes—just powerful solutions at your fingertips</p>
+            </div>
+            
+            <div class="devices-showcase">
+                <div class="device-card">
+                    <div class="device-image">
+                        <img src="images/device-1.png" alt="Tablet View">
+                    </div>
+                    <div class="device-tab">
+                        <svg width="31" height="32" viewBox="0 0 31 32" fill="none">
+                            <rect x="5.16" y="2.67" width="21.94" height="25.81" fill="#0448F4"/>
+                        </svg>
+                        <span>Tablet</span>
+                    </div>
+                </div>
+                
+                <div class="device-card">
+                    <div class="device-image">
+                        <img src="images/device-2.png" alt="Desktop View">
+                    </div>
+                    <div class="device-tab">
+                        <svg width="31" height="32" viewBox="0 0 31 32" fill="none">
+                            <rect x="5.16" y="2.67" width="21.94" height="25.81" fill="#0448F4"/>
+                        </svg>
+                        <span>Desktop</span>
+                    </div>
+                </div>
+                
+                <div class="device-card">
+                    <div class="device-image">
+                        <img src="images/device-3.png" alt="Mobile View">
+                    </div>
+                    <div class="device-tab">
+                        <svg width="31" height="32" viewBox="0 0 31 32" fill="none">
+                            <rect x="5.16" y="2.67" width="21.94" height="25.81" fill="#0448F4"/>
+                        </svg>
+                        <span>Mobile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">
+                    <span class="title-word">We</span>
+                    <span class="title-word">help</span>
+                    <span class="title-word">creators</span>
+                    <span class="title-word">quickly</span>
+                    <span class="title-word">build</span>
+                    <span class="title-word">websites</span>
+                </h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-1.jpg" alt="Jake Thompson">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Jake Thompson</h4>
+                            <span class="testimonial-handle">@jakethompsonux</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Framerstore made launching my first Framer template effortless! The layout is sleek, the CMS is intuitive, and I had my store up in minutes. Highly recommend!"</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-project">Haven Estate</span>
+                        <span class="testimonial-date">// Feb 16, 2025</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-2.jpg" alt="Sarah Chen">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Sarah Chen</h4>
+                            <span class="testimonial-handle">@sarahchen</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Weddy transformed our wedding planning experience. Everything is organized, beautiful, and easy to customize. Our guests love the elegant design!"</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-project">Chen Wedding</span>
+                        <span class="testimonial-date">// Feb 15, 2025</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-3.jpg" alt="Marcus Rodriguez">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Marcus Rodriguez</h4>
+                            <span class="testimonial-handle">@marcusrod</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"As a wedding photographer, I've seen many wedding websites. Weddy stands out with its professional templates and seamless user experience."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-project">Rodriguez Studios</span>
+                        <span class="testimonial-date">// Feb 14, 2025</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-4.jpg" alt="Emma Wilson">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Emma Wilson</h4>
+                            <span class="testimonial-handle">@emmawilson</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The customization options are incredible! I was able to create a unique wedding website that perfectly reflected our style and story."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-project">Wilson Wedding</span>
+                        <span class="testimonial-date">// Feb 13, 2025</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-5.jpg" alt="David Kim">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">David Kim</h4>
+                            <span class="testimonial-handle">@davidkim</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Setup was incredibly fast. Within an hour, we had a beautiful, responsive wedding website that worked perfectly on all devices."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-project">Kim Wedding</span>
+                        <span class="testimonial-date">// Feb 12, 2025</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-6.jpg" alt="Lisa Park">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Lisa Park</h4>
+                            <span class="testimonial-handle">@lisapark</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The customer support is outstanding. Any questions I had were answered quickly, and the team went above and beyond to help us succeed."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-project">Park Wedding</span>
+                        <span class="testimonial-date">// Feb 11, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2 class="faq-title">
+                    <span class="title-word">Answers</span>
+                    <span class="title-word">to</span>
+                    <span class="title-word">common</span>
+                    <span class="title-word highlight">questions</span>
+                    <span class="title-word">asked</span>
+                </h2>
+                <p class="faq-subtitle">If you have any other questions or need more information, feel free to reach out directly.</p>
+            </div>
+            
+            <div class="faq-content">
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does it take to set up the chatbot?</h3>
+                            <button class="faq-toggle">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can the chatbot integrate with my existing tools?</h3>
+                            <button class="faq-toggle">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is the chatbot customizable for my brand?</h3>
+                            <button class="faq-toggle">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How does the chatbot handle multilingual support?</h3>
+                            <button class="faq-toggle">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens if the chatbot can't answer a question?</h3>
+                            <button class="faq-toggle">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there a limit to how many chats the chatbot can handle?</h3>
+                            <button class="faq-toggle">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How secure is the chatbot?</h3>
+                            <button class="faq-toggle">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">
+                        <span class="title-word">Contact</span>
+                        <span class="title-word">us</span>
+                    </h2>
+                    <p class="contact-subtitle">Send us a message we love to hear from you</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">hello@weddy.cc</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">3891 Richardson, California</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7294C21.7209 20.9846 21.5573 21.2136 21.3521 21.4019C21.1469 21.5902 20.9046 21.7335 20.6407 21.8227C20.3768 21.9119 20.0973 21.9452 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3146 6.72533 15.2661 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.09481 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85685 2.63466 2.65219C2.82176 2.44753 3.04948 2.28437 3.30351 2.17274C3.55754 2.0611 3.83206 2.00323 4.10999 2.00001H7.10999C7.59522 1.99522 8.06579 2.16708 8.43373 2.48353C8.80168 2.79999 9.04201 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97351 7.27675 9.89382 7.64918C9.81413 8.02161 9.62884 8.36026 9.35999 8.62L8.08999 9.89C9.51395 12.3955 11.6045 14.4861 14.11 15.91L15.38 14.64C15.6397 14.3712 15.9784 14.1859 16.3508 14.1062C16.7232 14.0265 17.1121 14.0555 17.47 14.19C18.3773 14.5287 19.3199 14.7635 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5765C21.8437 15.9498 22.0122 16.4256 22 16.92Z" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">(239) 555-0108</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="form-title">Fill out the form</h3>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Company (optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Type your message here..." rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/notion-logo.svg" alt="Weddy Logo" class="footer-logo-icon">
+                        <span class="footer-logo-text">Weddy</span>
+                    </div>
+                    <div class="footer-brand-content">
+                        <h2 class="footer-title">Everything you need to plan the perfect wedding.</h2>
+                        <div class="footer-features">
+                            <div class="footer-feature">
+                                <div class="footer-feature-icon">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path d="M9 1L16 9L9 17L2 9L9 1Z" fill="#0448F4"/>
+                                    </svg>
+                                </div>
+                                <span>Organised flow</span>
+                            </div>
+                            <div class="footer-feature">
+                                <div class="footer-feature-icon">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path d="M9 1L16 9L9 17L2 9L9 1Z" fill="#0448F4"/>
+                                    </svg>
+                                </div>
+                                <span>All-in-one tool</span>
+                            </div>
+                            <div class="footer-feature">
+                                <div class="footer-feature-icon">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path d="M9 1L16 9L9 17L2 9L9 1Z" fill="#0448F4"/>
+                                    </svg>
+                                </div>
+                                <span>Easy to use</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <div class="newsletter-content">
+                        <h3>Sign up for our newsletter:</h3>
+                        <div class="newsletter-benefits">
+                            <div class="newsletter-benefit">
+                                <div class="benefit-dot"></div>
+                                <span>Be the first to access new template releases</span>
+                            </div>
+                            <div class="newsletter-benefit">
+                                <div class="benefit-dot"></div>
+                                <span>Unlock special discounts</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="newsletter-form">
+                        <input type="email" name="email" placeholder="Type your email" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M23 3C22.0424 3.67548 20.9821 4.19211 19.86 4.53C18.9377 3.84751 17.8136 3.47173 16.64 3.53C14.3347 3.49555 12.2927 4.96922 11.62 7.05C10.8239 9.48462 11.5591 12.089 13.66 13.5C12.8275 13.5 12.0078 13.3047 11.26 12.93C11.2468 12.9398 11.2335 12.9495 11.22 12.96V15C11.22 15.5304 11.4307 16.0391 11.8056 16.4142C12.1805 16.7893 12.6892 17 13.22 17H16.78C17.3108 17 17.8195 16.7893 18.1944 16.4142C18.5693 16.0391 18.78 15.5304 18.78 15V13.5C19.9071 13.1811 20.9172 12.5844 21.72 11.78C22.5228 10.9756 23.1195 9.96562 23.44 8.84L23 3Z" stroke="#0448F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Changelog</a>
+                    <a href="#" class="footer-link">404</a>
+                    <a href="#" class="footer-link">LinkedIn</a>
+                    <a href="#" class="footer-link">Instagram</a>
+                    <a href="#" class="footer-link">Twitter X</a>
+                    <a href="#" class="footer-link">Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
